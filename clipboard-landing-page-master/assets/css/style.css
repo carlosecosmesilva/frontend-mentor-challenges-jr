@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600;700&display=swap');
+
+/* ============= Variables ============= */
+
+:root{
+    --first-color:hsl(171, 66%, 44%);
+    --second-color: hsl(233, 100%, 69%);
+
+    --third-color: hsl(210, 10%, 33%);
+    --four-color: hsl(201, 11%, 66%);
+    
+}
+
+/* ============= Reset CSS ============= */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    font-family: 'Bai Jamjuree', sans-serif;
+    min-height: 100vh;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    cursor:pointer;
+}
+
+/* ============= Style CSS ============= */
+header{
+    padding: 1.88rem 4.38rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(/clipboard-landing-page-master/assets/images/bg-header-desktop.png);
+    background-size: cover;
+}
+
+.logo{
+    width: 100px;
+}
+
+.intro_header {
+    text-align: center;
+    padding: 1.88rem;
+    width: 40%;
+}
+
+.intro_header h2{
+    padding: 5px 0;
+}
+
+.action_button button{
+    padding: 10px 25px;
+    background: transparent;
+    outline: none;
+    border: none;
+    color: #fff;
+    margin: 10px 10px 5px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.action_button button.ios{
+    background-color: var(--first-color);
+    box-shadow: 2px 2px 8px var(--first-color), 2px 2px 2px var(--first-color);
+}
+
+.action_button button.mac {
+    background-color: var(--second-color);
+    box-shadow: 2px 2px 8px var(--second-color), 2px 2px 2px var(--second-color);
+}
+
+.one{
+    text-align: center;
+    width: 45%;
+    margin: auto;
+}
+
+.one h2{
+    padding: 15px 0;
+}
+
+.two{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 50px 0;
+}
+
+.two img{
+    height: 100%;
+    width: 80%;
+}
+
+.two .features div{
+    margin-top: 40px;
+    width: 65%;
+}
+
+.three{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.three img{
+    height: 100%;
+    width: 80%;
+    margin: auto;
+}
+
+.four .functions{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 100px 0;
+}
+
+.four .functions div{
+    width: 26%;
+    margin: 0 30px;
+}
+
+.four .functions div img{
+    margin: 10px 0 20px 0;
+}
+
+.four .companys{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    margin: 50px 30px;
+}
+
+.five {
+    text-align: center;
+    width: 45%;
+    margin: auto;
+}
+
+footer .foot{
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    align-items: center;
+}
+
+.foot .logo{
+    /* width: 50%;
+    height: 50%; */
+    margin: 0 70px;
+}
+
+.foot ul{
+    max-width: 400px;
+}
+
+ul li{
+    display: inline-block;
+    margin: 5px 20px;
+}
+
+a{
+    color: var(--first-color);
+}
+
+footer p { 
+    text-align: center;
+    font-size: 11px; text-align: center; 
+}
+
+@media (max-width:765px) {
+    header{
+        background: url(/clipboard-landing-page-master/assets/images/bg-header-mobile.png);
+        background-size: cover;
+        padding: 40px 10px;
+    }
+
+    .intro_header{
+        width: 100%;
+    }
+
+    .one{
+        width: 80%;
+    }
+
+    .two{
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction:column;
+    }
+
+    .two .features div{
+        width: 76%;
+        margin: 60px 12% auto;
+        text-align: center;
+    }
+
+    .three div:first-child{
+        width: 75%;
+    }
+
+    .four .functions{
+        display: grid;
+    }
+
+    .four .functions div{
+        width: 85%;
+    }
+
+    .four .companys{
+        display: grid;
+        grid-gap: 4em;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .five{
+        width: 84%;
+    }
+
+    .action_button button{
+        margin: 10px 0;
+    }
+
+    footer .foot{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    ul li{
+        display: grid;
+        margin: 20px;
+    }
+
+    .social_media a{
+        margin: 10px;
+    }
+}

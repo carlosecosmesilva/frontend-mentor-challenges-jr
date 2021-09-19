@@ -20,12 +20,12 @@ Isso é um site desenvolvido para mostrar todos os desafios concluidos com o men
 ## Overview
 ### The challenges
 
-- Challenge 1: [Clipboard landing page](https://laughing-wiles-b0bfb6.netlify.app/3-column-preview-card/index.html)
+- Challenge 1: [Clipboard landing page](https://cocky-clarke-90f078.netlify.app/clipboard-landing-page-master/index.html)
 
 
 ### Links
 
-- Live Site URL: [Live Site](https://laughing-wiles-b0bfb6.netlify.app)
+- Live Site URL: [Live Site](https://cocky-clarke-90f078.netlify.app)
 
 ## My process
 

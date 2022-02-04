@@ -1,0 +1,181 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5em 0;
+}
+
+.title__box .title {
+    color: var(--ColorDark);
+}
+
+.title__box p {
+    color: var(--ColorDarkLight);
+    font-weight: 700;
+}
+
+.toggle__mode {
+    display: flex;
+    align-items: center;
+    color: var(--ColorDarkLight);
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.toggle__mode input[type=checkbox] {
+    -webkit-appearance: none;
+    width: 5.625rem;
+    height: 2.5rem;
+    border-radius: 6.25rem;
+    margin-left: 1.25rem;
+    background: var(--ToggleBtnDark);
+    cursor: pointer;
+    outline: 0;
+    position: relative;
+}
+
+.toggle__mode input[type=checkbox]::before {
+    content: '';
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 3.125rem;
+    transform: translateX(50px) scale(0.8);
+    background: var(--BgLight);
+    transition: transform 0.3s;
+    position: absolute;
+}
+
+.toggle__mode input[type=checkbox]:checked::before {
+    transform: translateX(0) scale(0.8);
+}
+
+.followers,
+.grid__overview {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1.875rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.875rem;
+    border-radius: 0.5rem;
+    background: var(--BgLightCard);
+    position: relative;
+    cursor: pointer;
+}
+
+.card:hover {
+    background: var(--BgLightCardHover);
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    height: 0.313rem;
+    border-radius: 0.5rem 0.5rem 0 0;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.card.facebook::before {
+    background: var(--Facebook);
+}
+
+.card.twitter::before {
+    background: var(--Twitter);
+}
+
+.card.instagram::before {
+    background: var(--Instagram);
+}
+
+.card.youtube::before {
+    background: var(--YouTube);
+}
+
+.card__username {
+    display: flex;
+    justify-content: center;
+    color: var(--ColorDarkLight);
+}
+
+.card__username img {
+    margin-right: 0.625rem;
+}
+
+.count__followers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.563rem 0;
+    font-size: 1.1em;
+    font-weight: 400;
+    letter-spacing: 0.313rem;
+    text-transform: uppercase;
+    color: var(--ColorDarkLight);
+}
+
+.count__followers span {
+    font-size: 4em;
+    font-weight: 700;
+    letter-spacing: 0;
+    color: var(--ColorDark);
+}
+
+.new__access {
+    display: flex;
+    align-items: center;
+    color: var(--LimeGreen);
+    font-weight: 700;
+}
+
+.new__access.down {
+    color: var(--BrightRed);
+}
+
+.new__access img {
+    margin-right: 0.625rem;
+}
+
+.overview h2 {
+    color: var(--ColorDark);
+    font-size: 1.7em;
+    margin-top: 3.125rem;
+    margin-bottom: 2rem;
+}
+
+.grid__overview .card .title__card {
+    margin-bottom: 1.25rem;
+    font-size: 1.1em;
+    color: var(--ColorDarkLight);
+}
+
+.grid__overview .card .title__card,
+.grid__overview .card .text__card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: normal;
+    width: 100%;
+}
+
+.grid__overview .card .text__card {
+    align-items: baseline;
+}
+
+.grid__overview .card .text__card p {
+    font-size: 2.8em;
+    font-weight: 700;
+    color: var(--ColorDark);
+}
+
+.attribution {
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

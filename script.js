@@ -1,5 +1,6 @@
 const projects = [
-    'clipboard-landing-page-master'
+    'clipboard-landing-page-master',
+    'social-media-dashboard'
 ];
 
 const list = document.getElementById('list');

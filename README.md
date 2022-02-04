@@ -22,6 +22,7 @@ Isso é um site desenvolvido para mostrar todos os desafios concluidos com o men
 
 - Challenge 1: [Clipboard landing page](https://cocky-clarke-90f078.netlify.app/clipboard-landing-page-master/index.html)
 
+- Challenge 2: [Social Media Dashboard](https://cocky-clarke-90f078.netlify.app/social-media-dashboard/index.html)
 
 ### Links
 
